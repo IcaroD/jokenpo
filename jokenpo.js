@@ -20,25 +20,27 @@ function selectPedra(){
     papel = false;
 }
 
-var resultadoSorteio = 0;
-var random = Math.floor(Math.random() * 2);
+function realizarJogada()
 
-if (random == 0){
-    resultadoSorteio = 'tesoura';
-}
-else if (random == 1){
-    resultadoSorteio = 'papel'
-}
-else{
-    resultadoSorteio = 'pedra'
-}
+    var option = [1,2,3];
+    random = option[Math.floor(Math.random() * option.length)];
 
-if ((pedra == true && resultadoSorteio == 'tesoura') || (tesoura == true && resultadoSorteio == 'papel') || (papel == true && resultadoSorteio == 'pedra')){
-    document.getElementById("ganhador").innerHTML = "Usuário venceu."
-}
-else if ((papel == true && resultadoSorteio == 'tesoura') || (pedra == true && resultadoSorteio == 'papel') || (tesoura == true && resultadoSorteio == 'pedra')){
-    document.getElementById("ganhador").innerHTML = "Computador venceu."
-}
-else ((tesoura == true && resultadoSorteio == 'tesoura') || (papel == true && resultadoSorteio == 'papel') || (pedra == true && resultadoSorteio == 'pedra')){
-    document.getElementById("ganhador").innerHTML = "Houve empate."
-}
+    if (random == 0){
+        resultadoSorteio = 'tesoura';
+    }
+    else if (random == 1){
+        resultadoSorteio = 'papel'
+    }
+    else{
+        resultadoSorteio = 'pedra'
+    }
+
+    if ((pedra == true && resultadoSorteio == 'tesoura') || (tesoura == true && resultadoSorteio == 'papel') || (papel == true && resultadoSorteio == 'pedra')){
+        document.getElementById("ganhador").innerHTML = "Usuário venceu."
+    }
+    else if ((papel == true && resultadoSorteio == 'tesoura') || (pedra == true && resultadoSorteio == 'papel') || (tesoura == true && resultadoSorteio == 'pedra')){
+        document.getElementById("ganhador").innerHTML = "Computador venceu."
+    }
+    else if ((tesoura == true && resultadoSorteio == 'tesoura') || (papel == true && resultadoSorteio == 'papel') || (pedra == true && resultadoSorteio == 'pedra')){
+        document.getElementById("ganhador").innerHTML = "Houve empate."
+    }
