@@ -1,0 +1,29 @@
+body{
+    background: #29343e;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    padding: 10px 40px;
+}
+.card{
+    border-radius: 12px;
+    width: 10%;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+.card:hover{
+    box-shadow: 0 0 8px #e6dd96;
+    border: solid 1px #fff;
+}
+.card img{
+    width: 100%;
+    transition: all 0.5s linear;
+}
+.card img:active{
+    scale: 2;
+
+}
