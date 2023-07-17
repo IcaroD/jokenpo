@@ -7,3 +7,5 @@ Dificuldades com **Javascript e css(flexbox)**
 - [ ] Fazer o resultado aparecer
 - [ ] alinhar os elementos principais
 - [ ] estilizar o botão
+
+Se poderem me ajudar agradeço 🙏
