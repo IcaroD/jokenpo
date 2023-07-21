@@ -25,10 +25,10 @@ function realizarJogada()
     var option = [1,2,3];
     random = option[Math.floor(Math.random() * option.length)];
 
-    if (random == 0){
+    if (random == 1){
         resultadoSorteio = 'tesoura';
     }
-    else if (random == 1){
+    else if (random == 2){
         resultadoSorteio = 'papel'
     }
     else{
