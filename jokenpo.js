@@ -22,7 +22,7 @@ function selectPedra(){
 
 function realizarJogada()
 
-    var option = [1,2,3];
+    const option = [1,2,3];
     random = option[Math.floor(Math.random() * option.length)];
 
     if (random == 0){
