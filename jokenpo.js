@@ -20,6 +20,7 @@ function selectPedra(){
     papel = false;
 }
 
+
 function realizarJogada()
 
     const option = [1,2,3];
