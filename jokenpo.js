@@ -22,13 +22,12 @@ function selectPedra(){
 
 function realizarJogada()
 
-    var option = [1,2,3];
-    random = option[Math.floor(Math.random() * option.length)];
+    var random = Math.floor(Math.random() * 3);
 
-    if (random == 1){
+    if (random == 0){
         resultadoSorteio = 'tesoura';
     }
-    else if (random == 2){
+    else if (random == 1){
         resultadoSorteio = 'papel'
     }
     else{
