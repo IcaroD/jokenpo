@@ -1,5 +1,5 @@
 # jokenpo
-## É um jogo simples, que todos já brincaram
+## É um jogo que todos já brincaram
 ---
 Dificuldades com **Javascript e css(flexbox)**
 
